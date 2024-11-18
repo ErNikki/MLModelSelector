@@ -1,0 +1,19 @@
+import os
+
+EPISODES = 1000
+
+BATCH_SIZE = 16
+GAMMA = 0.1
+EPS_START = 1
+EPS_END = 0.01
+EPS_DECAY = 400000
+
+INITIAL_MEMORY = 10024
+MEMORY_SIZE = 2 * INITIAL_MEMORY
+WARMUP=10024
+UPDATE_TARGET=1024
+PLOT_STATS=1024
+
+#MODEL_SAVE_PATH = './rf-models/newTrainx2Regnet400newReward/'
+MODEL_SAVE_PATH = './rf-models/newTrainRegnet400Warmup/'
+MODEL_STATS_PATH = "./stats/newTrainRegnet400Warmup/"
